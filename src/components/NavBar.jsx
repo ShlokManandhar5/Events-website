@@ -11,7 +11,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <nav className='flex align-center items-center justify-between bg-white h-[12vh] max-w-[100%] top-0 sticky md:px-7 px-6'>
+            <nav className='flex align-center items-center justify-between bg-white h-[12vh] max-w-[100%] fixed w-full top-0 md:px-7 px-6 z-50'>
                 <div className='flex justify-between items-center w-full mb-2'>
                     <div className='text-[#410066d6] sm:text-4xl text-2xl font-bold cursor-pointer'>
                         Khatra Events

@@ -4,7 +4,7 @@ const Hero = () => {
 
     return (
         <div>
-            <main class="p-6">
+            <main class="p-9 md:mt-20 mt-16">
                 <div class="w-[100%] h-[70vh] object-cover ">
                     <img src="https://picsum.photos/800/800" class="w-full h-[100%] object-cover" alt="hero-section" />
                 </div>

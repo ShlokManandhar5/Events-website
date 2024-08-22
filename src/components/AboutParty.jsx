@@ -17,9 +17,9 @@ const AboutParty = () => {
                 </div>
             </div>
             <div class="flex items-center my-8">
-                <div class="flex-grow border-t border-white"></div>
-                <span class="mx-4 text-2xl font-bold text-white">Event Timeline</span>
-                <div class="flex-grow border-t border-white"></div>
+                <div class="flex-grow border-t border-[#370554]"></div>
+                    <span class="mx-4 text-2xl font-bold text-[#370554]">Event Timeline</span>
+                <div class="flex-grow border-t border-[#370554]"></div>
             </div>
 
         </div>

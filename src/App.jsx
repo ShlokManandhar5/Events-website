@@ -5,8 +5,9 @@ import PreviousPics from "./components/PreviousPics"
 import Timeline from "./components/Timeline"
 import AboutParty from "./components/AboutParty"
 import BuyTickets from "./components/BuyTickets"
-
-
+import PhotoGallery from "./components/PhotoGallery"
+import OurTeam from "./components/OurTeam"
+import SponserLogo from "./components/SponserLogo"
 
 function App() {
 
@@ -18,6 +19,9 @@ function App() {
       <AboutParty/>
       <Timeline/>
       <BuyTickets/>
+      <PhotoGallery/>
+      <OurTeam/>
+      <SponserLogo/>
     </div>
   )
 }
