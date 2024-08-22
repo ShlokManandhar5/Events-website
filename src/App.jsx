@@ -1,7 +1,12 @@
 import React from "react"
 import NavBar from "./components/NavBar"
 import Hero from "./components/Hero"
-import Section from "./components/Section"
+import PreviousPics from "./components/PreviousPics"
+import Timeline from "./components/Timeline"
+import AboutParty from "./components/AboutParty"
+import BuyTickets from "./components/BuyTickets"
+
+
 
 function App() {
 
@@ -9,7 +14,10 @@ function App() {
     <div className="p-0 m-0">
       <NavBar/>
       <Hero/>
-      <Section/>
+      <PreviousPics/>
+      <AboutParty/>
+      <Timeline/>
+      <BuyTickets/>
     </div>
   )
 }
