@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import {Link} from 'react-router-dom';
 
 const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const NavBar = () => {
                     </div>
                     <div className="hidden md:flex gap-12">
                         <ul className="flex flex-row gap-x-4 align-center lg:font-medium text-base">
-                            <li><a href="#" className="bg-[#410066d6] text-white rounded-lg lg:px-4 px-2 py-1 align-middle">Home</a></li>
+                            <li><Link to="/" className="bg-[#410066d6] text-white rounded-lg lg:px-4 px-2 py-1 align-middle">Home</Link></li>
                             <li><a href="#" className="bg-[#410066d6] text-white rounded-lg lg:px-4 px-2 py-1 align-middle">Tickets</a></li>
                             <li><a href="#" className="bg-[#410066d6] text-white rounded-lg lg:px-4 px-2 py-1 align-middle">Program</a></li>
                             <li><a href="#" className="bg-[#410066d6] text-white rounded-lg lg:px-4 px-2 py-1 align-middle">Contact us</a></li>
