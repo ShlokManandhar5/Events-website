@@ -23,11 +23,11 @@ const NavBar = () => {
 
                     <div className="hidden md:flex gap-12">
                         <ul className="flex flex-row lg:gap-x-12 gap-x-7 align-center lg:font-medium lg:text-xl text-lg">
-                            <li><Link to="/" className="text-[#410066d6] hover:font-bold font-semibold">Home</Link></li>
-                            <li><a href="#" className="text-[#410066d6] hover:font-bold font-semibold">Events</a></li>
-                            <li><a href="#" className="text-[#410066d6] hover:font-bold font-semibold">About us</a></li>
-                            <li><a href="#" className="text-[#410066d6] hover:font-bold font-semibold">Contact us</a></li>
-                            <li><a href="#" className="text-[#410066d6] hover:font-bold font-semibold">Blog</a></li>
+                            <li><Link to="/" className="text-[#410066d6] font-semibold">Home</Link></li>
+                            <li><a href="#"  className="text-[#410066d6] font-semibold">Events</a></li>
+                            <li><a href="#"  className="text-[#410066d6] font-semibold">About us</a></li>
+                            <li><a href="#"  className="text-[#410066d6] font-semibold">Contact us</a></li>
+                            <li><a href="#"  className="text-[#410066d6] font-semibold">Blog</a></li>
                         </ul>
                     </div>
 
