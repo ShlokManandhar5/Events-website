@@ -1,13 +1,10 @@
 import React from "react";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
-import Timeline from "./components/Timeline";
-import AboutParty from "./components/AboutParty";
 import BuyTickets from "./components/BuyTickets";
-import PhotoGallery from "./components/PhotoGallery";
 import OurTeam from "./components/OurTeam";
 import SponserLogo from "./components/SponserLogo";
-import PreviousPics from "./components/PreviousPics";
+import OurEvents from "./components/OurEvents";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -21,11 +18,8 @@ function App() {
             <>
               <NavBar />
               <Hero />
-              <PreviousPics />
-              <AboutParty />
-              <Timeline />
+              <OurEvents />
               <BuyTickets />
-              <PhotoGallery />
               <OurTeam />
               <SponserLogo /> 
             </>
