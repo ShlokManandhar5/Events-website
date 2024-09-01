@@ -2,7 +2,7 @@ import React from 'react'
 
 const OurEvents = () => {
     return (
-        <div className='bg-[#5f20b2ea]'>
+        <div className='bg-[#410066cc]'>
             
             <div className='p-3 pb-10'>
 
