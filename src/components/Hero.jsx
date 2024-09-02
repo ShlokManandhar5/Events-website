@@ -46,12 +46,10 @@ const Hero = () => {
             // If isHovering is false, it calls the startInterval() function to set up the timer.
         }
 
-        // Clean up the interval when the component is unmounted
         return () => clearInterval(interval);
         // The cleanup function remains ensure the interval is cleared when the component is unmounted.
 
     }, [currentIndex, slides.length, isHovering]);
-
     // The useEffect hook now checks the value of isHovering before starting the interval.
 
     const prevSlide = () => {
@@ -90,9 +88,32 @@ const Hero = () => {
                 {/* image or Carousel */}
                 <div className="w-[100%] h-[70vh] object-cover relative group">
 
-                        <div className='w-full h-full rounded-2xl bg-center bg-cover duration-500 absolute top-0 bg-slate-900 opacity-40'></div> 
+                    <div className='w-full h-full rounded-2xl bg-center bg-cover duration-500 absolute top-0 bg-slate-900 opacity-40'></div>
 
-                    <div 
+                    <div className='w-full h-full rounded-2xl bg-center bg-cover duration-500 absolute top-0'>
+
+                        <div className='py-16 px-16 text-white z-10 flex flex-col gap-2 max-w-[45%]'>
+
+                            {/* Title */}
+                            <div className=' text-3xl font-bold'>
+                                Exiting Upcoming event
+                            </div>
+
+                            {/* Short Description */}
+                            <div className='text-lg font-medium'>
+                                <p>Get Ready Butwal !! </p> 
+                                <p> Your favourite band Pahenlo Batti Muni is coming to your city.</p>
+                            </div>
+
+                        </div>
+
+                        <div className='absolute right-0 bottom-0 py-16 px-20'>
+                            <button className='bg-purple-800 text-white z-10 py-2 px-3 rounded-xl font-semibold outline outline-1'>Buy Tickets</button>
+                        </div>
+
+                    </div>
+
+                    <div
                         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
                         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
                     ></div>
