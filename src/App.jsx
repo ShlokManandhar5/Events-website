@@ -1,10 +1,9 @@
 import React from "react";
 import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
-import BuyTickets from "./components/BuyTickets";
-import OurTeam from "./components/OurTeam";
+import Hero from "./components/heroSection/Hero";
 import SponserLogo from "./components/SponserLogo";
 import OurEvents from "./components/OurEvents";
+import BuyTickets from "./components/Buy_Tickets/BuyTickets";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -19,8 +18,7 @@ function App() {
               <NavBar />
               <Hero />
               <OurEvents />
-              <BuyTickets />
-              <OurTeam />
+              <BuyTickets/>
               <SponserLogo /> 
             </>
           }

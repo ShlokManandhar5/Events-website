@@ -17,7 +17,7 @@ const NavBar = () => {
 
                 <div className='flex justify-between items-center w-full mb-2'>
 
-                    <div className='text-[#410066d6] sm:text-4xl text-2xl font-bold cursor-pointer'>
+                    <div className='text-[#410066d6] sm:text-4xl text-3xl font-bold cursor-pointer'>
                         Khatra Events
                     </div>
 
