@@ -1,42 +1,64 @@
-import React from 'react'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/autoplay';
+import { EffectCoverflow, Autoplay } from 'swiper/modules';
+import UpcomingCard from './Buy_Tickets/UpcomingCard';
 
 const OurEvents = () => {
-    return (
-        <div className='bg-[#410066cc]'>
-            
-            <div className='p-3 pb-10'>
+    const slides = [
+        { title: 'Photography', date: '21 SEP', price: 'Rs 500', location: 'Hyatt Ground, Chuchhepati, Chabahil' },
+        { title: 'Photography', date: '22 SEP', price: 'Rs 600', location: 'Hyatt Ground, Chuchhepati, Chabahil' },
+        { title: 'Photography', date: '23 SEP', price: 'Rs 700', location: 'Hyatt Ground, Chuchhepati, Chabahil' },
+        { title: 'Photography', date: '24 SEP', price: 'Rs 800', location: 'Hyatt Ground, Chuchhepati, Chabahil' },
+        { title: 'Photography', date: '25 SEP', price: 'Rs 900', location: 'Hyatt Ground, Chuchhepati, Chabahil' },
+        { title: 'Photography', date: '26 SEP', price: 'Rs 1000', location: 'Hyatt Ground, Chuchhepati, Chabahil' },
+    ];
 
-                <div class="flex items-center my-8">
+    return (
+        <div>
+            <div>
+                <div class="flex items-center bg-[#410066cc] pt-6">
                     <div class="flex-grow border-t border-[#F7F5FB]"></div>
                     <span class="mx-4 text-3xl font-bold text-[#F7F5FB]">Upcoming Events</span>
                     <div class="flex-grow border-t border-[#F7F5FB]"></div>
                 </div>
 
-                <div className='mx-6'>
-                    <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-8 justify-items-center h-[100%]">
-                        <div class="py-2 h-[100%]">
-                            <div class="rounded-md overflow-hidden shadow-lg max-w-2xl h-[100%]">
-                                <img src="https://picsum.photos/500/500" alt="DJ photo" class="w-full h-[100%]" />
-                            </div>
-                        </div>
-                        <div class="py-2">
-                            <div class="rounded-md overflow-hidden shadow-lg max-w-2xl h-[100%]">
-                                <img src="https://picsum.photos/500/500" alt="Pic of live music singer" class="w-full h-[100%]" />
-                            </div>
-                        </div>
-                        <div class="py-2">
-                            <div class="rounded-md overflow-hidden shadow-lg max-w-2xl h-[100%]">
-                                <img src="https://picsum.photos/500/500" alt="Past event Dance Photo" class="w-full h-[100%]" />
-                            </div>
-                        </div>
-                        <div class="py-2">
-                            <div class="rounded-md overflow-hidden shadow-lg max-w-2xl h-[100%]">
-                                <img src="https://picsum.photos/500/500" alt="Past event Party Photo" class="w-full h-[100%]" />
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <section className="h-[80vh]  bg-[#410066cc] flex items-center justify-center">
+                    <Swiper
+                        modules={[EffectCoverflow, Autoplay]}
+                        effect="coverflow"
+                        grabCursor={true}
+                        centeredSlides={true}
+                        loop={true}
+                        slidesPerView="auto"
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
+                        coverflowEffect={{
+                            rotate: 0,
+                            stretch: 0,
+                            depth: 200,
+                            modifier: 2.5,
+                            slideShadows: true,
+                        }}
+                        className="w-full max-w-4xl"
+                    >
+                        {slides.map((slide, index) => (
+                            <SwiperSlide key={index} className="rounded-3xl overflow-hidden max-w-fit">
+                                <UpcomingCard
+                                    img={slide.img}
+                                    date={slide.date}
+                                    price={slide.price}
+                                    title={slide.title}
+                                    location={slide.location}
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </section>
             </div>
         </div>
     )
