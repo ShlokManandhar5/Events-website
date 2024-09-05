@@ -25,7 +25,7 @@ const OurEvents = () => {
                     <div class="flex-grow border-t border-[#F7F5FB]"></div>
                 </div>
 
-                <section className="h-[80vh]  bg-[#410066cc] flex items-center justify-center">
+                <section className="h-[90vh]  bg-[#410066cc] flex items-center justify-center">
                     <Swiper
                         modules={[EffectCoverflow, Autoplay]}
                         effect="coverflow"

@@ -42,9 +42,9 @@ const AboutTimeline = () => {
                         </div>
                     </div>
                 </div>
-                </div>
-                </div>
-                )
+            </div>
+        </div>
+    )
 }
 
-                export default AboutTimeline
+export default AboutTimeline

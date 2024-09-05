@@ -5,7 +5,6 @@ import SponserLogo from "./components/SponserLogo";
 import OurEvents from "./components/OurEvents";
 import BuyTickets from "./components/Buy_Tickets/BuyTickets";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 function App() {
 
   return (
@@ -18,11 +17,12 @@ function App() {
               <NavBar />
               <Hero />
               <OurEvents />
-              <BuyTickets/>
-              <SponserLogo /> 
+              <BuyTickets />
+              <SponserLogo />
             </>
           }
           />
+         
         </Routes>
       </BrowserRouter>
     </div>

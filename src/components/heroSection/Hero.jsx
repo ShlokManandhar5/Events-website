@@ -71,7 +71,7 @@ const Hero = () => {
 
                         {/* Updated Button Position and Text Size */}
                         <div className='absolute right-0 bottom-0 py-16 px-20 flex justify-center md:justify-end sm:justify-center w-full'>
-                            <button className='bg-purple-800 text-white z-10 sm:py-2 py-2 sm:px-3 px-2 rounded-xl font-medium outline outline-1 text-sm xs:text-sm'>
+                            <button className='bg-purple-800 text-white z-10 sm:py-3 py-2 sm:px-3 px-3 rounded-xl font-medium outline outline-1 text-sm xs:text-sm'>
                                 Buy Tickets
                             </button>
                         </div>
