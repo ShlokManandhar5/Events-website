@@ -44,10 +44,10 @@ const NavBar = () => {
                         <div className="flex flex-col gap-y-2 pt-1 max-w-[90%] m-auto">
                             <ul className='text-[#410066d6] text-xl font-semibold'>
                                 <li><a href="#" className="block rounded-lg px-2 py-2 align-middle">Home</a></li>
-                                <li><a href="#" className="block rounded-lg px-2 py-2 align-middle">Tickets</a></li>
-                                <li><a href="#" className="block rounded-lg px-2 py-2 align-middle">Program</a></li>
+                                <li><a href="#" className="block rounded-lg px-2 py-2 align-middle">Events</a></li>
+                                <li><a href="#" className="block rounded-lg px-2 py-2 align-middle">About Us</a></li>
                                 <li><a href="#" className="block rounded-lg px-2 py-2 align-middle">Contact us</a></li>
-                                <li><a href="#" className="block rounded-lg px-2 py-2 align-middle">Buy Tickets</a></li>
+                                <li><a href="#" className="block rounded-lg px-2 py-2 align-middle">Blog</a></li>
                             </ul>
                         </div>
 
