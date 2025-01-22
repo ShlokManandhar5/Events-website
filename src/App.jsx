@@ -19,7 +19,7 @@ function App() {
               <Hero />
               <OurEvents />
               <BuyTickets/>
-              <SponserLogo /> 
+              {/* <SponserLogo />  */}
             </>
           }
           />
